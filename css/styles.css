@@ -1,0 +1,219 @@
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --white-text-color:#FFFFFF;
+    --accent-color:#2196F3;
+    --secondary-background-color:#F5F4FA;
+    --header-background-color:#FFFFFF;
+    
+}
+/* цвет шрифта лого #000000; */
+/* цвет телефона и міла в футере color: rgba(255, 255, 255, 0.6); */
+/* ховер на кнопке rgba(255, 255, 255, 0) 100%) */
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+ul {
+    list-style-type: none;
+}
+/* логотип  */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-studio-header{
+color: #000000;
+}
+.logo-studio-footer {
+    color: var(--white-text-color);
+}
+.logo-web {
+    color: var(--accent-color);
+}
+
+/* ШАПКА */
+.header {
+    background-color: var(--header-background-color);
+}
+.nav-list .nav-list-link.current{
+    color: var(--accent-color);
+}
+.nav-list-link {    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.nav-list-link:hover,.nav-list-link:focus {
+    color: var(--accent-color);
+}
+/* .contacts {
+    
+} */
+.contacts-link { 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.contacts-link:hover, .contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/* ЗАГОЛОВКИ */
+.secod-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1/17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/* КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ */
+
+/* герой */
+.hero-section {
+    background-color: #2F303A;
+}
+.hero-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+.hero-button:hover, .hero-button:focus {
+   background: linear-gradient(180deg, #FFFFFF 0%, 
+   rgba(255, 255, 255, 0) 100%), #FFFFFF;;
+}
+/* секция наши преимущества */
+
+.advantages {
+    
+}
+/* .advantages-list {
+    
+} */
+.advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.advantages-paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* секция чем мы занимаемся */
+.work {
+    
+}
+.work-list {
+    list-style-type: none;
+}
+/* секция наша команда */
+.team {
+    background-color: var(--secondary-background-color);
+}
+.team-list {
+
+}
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-text-color);
+}
+.team-profession {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* футер */
+.footer {
+    background-color: #2F303A;
+}
+.address {
+    font-style: normal;
+}
+.address-map {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+.address-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.address-link:hover, .address-link:focus {
+    color: var(--accent-color);
+}
+
+/* КОНТЕНТ СТРАНИЦЫ ПОРТФОЛИО */
+
+/* кнопки */
+/* .filter-list {
+    
+} */
+.filter-item {
+      
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    color: var(--title-text-color);
+}
+.filter-item:hover, .filter-item:focus {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+/* .portfolio-list {
+    
+} */
+.portfolio-link {
+    text-decoration: none;
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    
+}
+.portfolio-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    
+}
