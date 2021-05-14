@@ -55,7 +55,18 @@ display: block;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 93px;
 }
 
 .logo-studio-header{
@@ -70,25 +81,40 @@ color: #000000;
 
 /* ШАПКА */
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: var(--header-background-color);
+}
+.nav-list {
+    display: flex;
 }
 .nav-list .nav-list-link.current{
     color: var(--accent-color);
 }
-.nav-list-link {    
+.nav-list-link {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--title-text-color);
     text-decoration: none;
 }
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
 .nav-list-link:hover,.nav-list-link:focus {
     color: var(--accent-color);
 }
-/* .contacts {
-    
-} */
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
 .contacts-link { 
+    margin-left: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -96,6 +122,7 @@ color: #000000;
     color: var(--primary-text-color);
     text-decoration: none;
 }
+
 .contacts-link:hover, .contacts-link:focus {
     color: var(--accent-color);
 }
@@ -212,7 +239,7 @@ color: #000000;
     
 } */
 .filter-item {
-      
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
