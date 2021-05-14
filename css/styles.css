@@ -21,15 +21,6 @@ ul {
     list-style-type: none;
 }
 
-/* логотип  */
-.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -65,8 +56,19 @@ display: block;
     display: flex;
     align-items: center;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* логотип  */
 .logo {
     margin-right: 93px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo-studio-header{
@@ -151,10 +153,14 @@ color: #000000;
     color: var(--white-text-color);
 }
 .hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em; 
     color: var(--white-text-color);
@@ -167,7 +173,8 @@ color: #000000;
 /* секция наши преимущества */
 
 .advantages {
-    
+    padding-top: 94px;
+    padding-bottom: 47px;
 }
 /* .advantages-list {
     
@@ -186,7 +193,8 @@ color: #000000;
 
 /* секция чем мы занимаемся */
 .work {
-    
+    padding-top: 47px;
+    padding-bottom: 94px;
 }
 .work-list {
     list-style-type: none;
