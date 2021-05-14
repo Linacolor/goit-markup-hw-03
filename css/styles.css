@@ -130,7 +130,8 @@ color: #000000;
 }
 
 /* ЗАГОЛОВКИ */
-.secod-title {
+.second-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1/17;
@@ -176,9 +177,18 @@ color: #000000;
     padding-top: 94px;
     padding-bottom: 47px;
 }
-/* .advantages-list {
-    
-} */
+.advantages-list {
+    display: flex;  
+}
+.advantage-item {
+    width: calc( (100% - 90px) / 4);
+}
+.advantage-item:not(:last-child) {
+    margin-right: 30px;
+}
+.advantages-header-title {
+    visibility: hidden;
+}
 .advantages-title {
     font-weight: 700;
     font-size: 14px;
@@ -197,15 +207,29 @@ color: #000000;
     padding-bottom: 94px;
 }
 .work-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
     list-style-type: none;
+}
+.work-list-item {
+    margin-left: 30px;
+    margin-top: 30px;
 }
 /* секция наша команда */
 .team {
     background-color: var(--secondary-background-color);
 }
 .team-list {
-
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
 }
+.team-list-item {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .team-title {
     font-weight: 500;
     font-size: 16px;
