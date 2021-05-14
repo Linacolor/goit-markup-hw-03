@@ -20,6 +20,7 @@ body {
 ul {
     list-style-type: none;
 }
+
 /* логотип  */
 .logo {
     font-family: Raleway, sans-serif;
@@ -27,6 +28,34 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+ul,
+ol {
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+img {
+display: block;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
 }
 
 .logo-studio-header{
