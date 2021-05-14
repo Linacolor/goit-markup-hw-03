@@ -41,6 +41,7 @@ padding-left: 0;
 img {
 display: block;
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -83,6 +84,7 @@ color: #000000;
 
 /* ШАПКА */
 .header {
+    border-bottom: 1px solid var(--primary-text-color);
     padding-top: 24px;
     padding-bottom: 24px;
     background-color: var(--header-background-color);
@@ -144,8 +146,12 @@ color: #000000;
 /* герой */
 .hero-section {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 }
 .hero-header {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -230,14 +236,20 @@ color: #000000;
     margin-left: 30px;
     margin-top: 30px;
 }
+.team-list-bottom-part {
+    padding: 30px 54px;
+}
 
 .team-title {
+    margin-bottom: 10px;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     color: var(--title-text-color);
 }
 .team-profession {
+    text-align: center;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -281,6 +293,10 @@ color: #000000;
     background-color: var(--secondary-background-color);
     color: var(--title-text-color);
 }
+/* .button {
+    border-style: solid;
+    border-color: var(--primary-text-color);
+} */
 .filter-list-item {
     margin-bottom: 50px;
 }
@@ -291,6 +307,7 @@ color: #000000;
     background-color: var(--accent-color);
     color: var(--white-text-color);
 }
+/* Портфолио */
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -307,11 +324,13 @@ color: #000000;
     text-decoration: none;
 }
 .portfolio-link-sign {
+    padding: 20px 24px;
     border: 1px solid var(--primary-text-color);
     border-top: 0;
     margin-bottom: 30px;
 }
 .portfolio-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
