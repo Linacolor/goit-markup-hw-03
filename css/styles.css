@@ -222,6 +222,7 @@ color: #000000;
 }
 .team-list {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
@@ -267,9 +268,10 @@ color: #000000;
 /* КОНТЕНТ СТРАНИЦЫ ПОРТФОЛИО */
 
 /* кнопки */
-/* .filter-list {
-    
-} */
+.filter-list {
+   display: flex; 
+   justify-content: center;
+}
 .filter-item {
     border-radius: 4px;
     font-weight: 500;
@@ -279,15 +281,35 @@ color: #000000;
     background-color: var(--secondary-background-color);
     color: var(--title-text-color);
 }
+.filter-list-item {
+    margin-bottom: 50px;
+}
+.filter-list-item:not(:last-child) {
+    margin-right: 8px;
+}
 .filter-item:hover, .filter-item:focus {
     background-color: var(--accent-color);
     color: var(--white-text-color);
 }
-/* .portfolio-list {
-    
-} */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.portfolio-list-item {
+    width: calc((100% - 60px) / 3);
+}
+.portfolio-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
 .portfolio-link {
     text-decoration: none;
+}
+.portfolio-link-sign {
+    border: 1px solid var(--primary-text-color);
+    border-top: 0;
+    margin-bottom: 30px;
 }
 .portfolio-title {
     font-weight: 700;
