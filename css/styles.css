@@ -5,6 +5,7 @@
     --accent-color:#2196F3;
     --secondary-background-color:#F5F4FA;
     --header-background-color:#FFFFFF;
+    --border-color: #EEEEEE;
     
 }
 /* цвет шрифта лого #000000; */
@@ -48,6 +49,9 @@ display: block;
     padding-right: 15px;
     margin: 0 auto;
 }
+.header { 
+    background-color: var(--header-background-color);
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -64,6 +68,8 @@ display: block;
 
 /* логотип  */
 .logo {
+    display: inline-block;
+
     margin-right: 93px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -97,8 +103,8 @@ color: #000000;
 }
 .nav-list-link {
     display: block;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-top: 7px;
 
     font-weight: 500;
     font-size: 14px;
@@ -117,8 +123,10 @@ color: #000000;
     display: flex;
     margin-left: auto;
 }
-.contacts-link { 
+.contacts-list {
     margin-left: 50px;
+}
+.contacts-link { 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -192,10 +200,11 @@ color: #000000;
 .advantage-item:not(:last-child) {
     margin-right: 30px;
 }
-.advantages-header-title {
-    visibility: hidden;
+.visually-hidden {
+    display: none;
 }
 .advantages-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -233,11 +242,14 @@ color: #000000;
     margin-top: -30px;
 }
 .team-list-item {
+    border-radius: 0px 0px 4px 4px;
     margin-left: 30px;
     margin-top: 30px;
+    width: 270px;
 }
 .team-list-bottom-part {
-    padding: 30px 54px;
+    background-color: var(--header-background-color);
+    padding: 30px 30px;
 }
 
 .team-title {
@@ -256,9 +268,16 @@ color: #000000;
 
 /* футер */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
 }
+.logo-footer {
+  margin-bottom: 20px;
+}
 .address {
+    display: flex;
+    flex-direction: column;
     font-style: normal;
 }
 .address-map {
@@ -268,6 +287,7 @@ color: #000000;
     text-decoration: none;
 }
 .address-link {
+
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
@@ -283,6 +303,7 @@ color: #000000;
 .filter-list {
    display: flex; 
    justify-content: center;
+   margin-bottom: 50px;
 }
 .filter-item {
     border-radius: 4px;
@@ -297,9 +318,7 @@ color: #000000;
     border-style: solid;
     border-color: var(--primary-text-color);
 } */
-.filter-list-item {
-    margin-bottom: 50px;
-}
+
 .filter-list-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -331,9 +350,8 @@ color: #000000;
 }
 .portfolio-link-sign {
     padding: 20px 24px;
-    border: 1px solid var(--primary-text-color);
+    border: 1px solid var(--border-color);
     border-top: 0;
-    margin-bottom: 30px;
 }
 .portfolio-title {
     margin-bottom: 4px;
